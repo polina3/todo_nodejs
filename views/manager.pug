@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet" href="static/style.css")
+	
+	body
+		div(class="con_us")
+			div(class="person")
+				h1=login
+			main
+				div(id="app_m")
+					div(class="fun")
+						div(id="ad")
+							h1 добавление
+							label назавание задания
+							input(type="text" v-model="name_t")
+							label дата старта проекта
+							input(type="date" id="date_s" v-model="date_s")  
+							label дата окончания работы над проектом
+							input(type="date" id="date_e" v-model="date_e")
+							label исполнитель
+							select(v-model="ex")
+								option(v-bind:data="a" v-for="a in answer" ) {{a.executor}}
+							label описание задачи
+							textarea(v-model="d")
+							button(v-on:click='add') ok
+						div(class="reg")
+							h1 регистрация
+							label Логин
+							input(type="text" name='login' v-model="new_login")
+							label пароль
+							input(type="password" name='password' v-model="new_password")
+							label(for="check" v-bind:class="checked") менеджер 
+							input(id="check" type="checkbox" v-model="checked"  true-value="t" false-value="f")
+							button(v-on:click='reg') Ok
+					div(class="t_manager")
+						t(v-bind:data="a" v-for="a in answer")
+				
+						
+					  
+					  
+					  
+					  
+					
+				  
+			
+	
+	script(src="/socket.io/socket.io.js")
+	script(src="https://cdn.jsdelivr.net/npm/vue")
+	script(src="static/manager.js")

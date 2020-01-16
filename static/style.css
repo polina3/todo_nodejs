@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+*{
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+.con_us{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 150px 1fr;
+	grid-gap: 15px;
+}
+.person{
+	grid-row:1;
+	grid-column: 1/-1;
+	background: rgb(216,127,129);
+	background: linear-gradient(90deg, rgba(216,127,129,1) 0%, rgba(234,181,149,1) 100%); 
+	color:#fff;
+	padding: 30px;
+}
+.person h1{
+    color:#fff;
+}
+main{
+	grid-column:1/-1;
+	grid-row:2;
+}
+#ad{
+    height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+}
+button{
+	height: 50px;
+    color: #c55f4e;
+    border: 1px solid #d87f81;
+    background: none;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+}
+input{
+	font-size: 20pt;
+}
+label{
+	font-size: 18pt;
+}
+.t_manager{
+    grid-column:2;
+}
+#app_m{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+}
+.task{
+    padding: 5px;
+    width: 100%;
+}
+h1{
+    color: #c55f4e;
+}
+.con{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+    background: rgb(216,127,129);
+    background: linear-gradient(90deg, rgba(216,127,129,1) 0%, rgba(234,181,149,1) 100%);
+}
+.main_av{
+    grid-row:1;
+    grid-column: 2;
+     background: rgba(255, 255, 255, 0.5);
+    font-family: 'Poiret One', cursive;
+    
+}
+form{
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+form label{
+    font-size: 50pt;
+}
+form input[type="submit"]{
+    height: 50px;
+    color: #c55f4e;
+    border: 1px solid #d87f81;
+    background: none;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+}
+form input[type="text"] ,form input[type="password"]{
+    font-size: 30pt;
+    border: 1px solid #d87f81;
+    background: none;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.5);
+}
+.t_manager,.t_user{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.reg{
+    height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+}
+.fun{
+    grid-column:1;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.t{
+    color:rgb(87, 238, 0)
+}
+.f{
+    color: rgb(255, 29, 29);
+}
+.t,.f{
+    transition: 0.5s;
+}

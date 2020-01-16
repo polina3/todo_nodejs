@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet" href="static/style.css")
+	
+	body
+		div(class="con_us")
+			div(class="person")
+				h1=login
+			main(id="main_user")
+				div(id="app_u")
+					div(class="t_user")
+						t( v-bind:data="a" v-for="a in answer")
+					  
+					  
+					  
+					  
+					
+				  
+			
+	
+	script(src="/socket.io/socket.io.js")
+	script(src="https://cdn.jsdelivr.net/npm/vue")
+	script(src="static/user.js")

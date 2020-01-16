@@ -1,0 +1,27 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo",
+  "main": "ser.js",
+  "scripts": {
+    "start": "node ser",
+    "dev": "nodemon ser"
+  },
+  "keywords": [
+    "todo",
+    "node"
+  ],
+  "author": "Polli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mysql2": "^1.7.0",
+    "nodemon": "^1.19.3",
+    "pug": "^2.0.4",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
